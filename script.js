@@ -1,11 +1,53 @@
 (function () {
-      // Loader: lite fly som "tar av" når alt er lastet
   const loader = document.getElementById("loader");
 
+  const KEY = "ma_loader_seen";
+
+  // NB: ikke kall denne "nav" (du bruker nav senere til menyen)
+  const navEntry = performance.getEntriesByType("navigation")[0];
+  const isReload = navEntry && navEntry.type === "reload";
+
+  if (loader) {
+    // ved refresh: vis loader igjen
+    if (isReload) {
+      sessionStorage.removeItem(KEY);
+    }
+
+    const alreadySeen = sessionStorage.getItem(KEY) === "1";
+
+    if (alreadySeen) {
+      loader.remove();
+    } else {
+      sessionStorage.setItem(KEY, "1");
+
+      const MIN_MS = 900;
+      const startedAt = performance.now();
+
+      function hideLoader() {
+        const elapsed = performance.now() - startedAt;
+        const wait = Math.max(0, MIN_MS - elapsed);
+
+        window.setTimeout(() => {
+          loader.classList.add("is-leaving");
+          window.setTimeout(() => loader.remove(), 1600);
+        }, wait);
+      }
+
+      if (document.readyState === "complete") hideLoader();
+      else window.addEventListener("load", hideLoader, { once: true });
+    }
+  }
   function hideLoader() {
     if (!loader) return;
-    loader.classList.add("is-leaving");
-    window.setTimeout(() => loader.remove(), 900);
+
+    const elapsed = performance.now() - startedAt;
+    const wait = Math.max(0, MIN_MS - elapsed);
+
+    window.setTimeout(() => {
+      loader.classList.add("is-leaving");
+      // CSS transition er 0.35s, så 450ms er nok før remove
+      window.setTimeout(() => loader.remove(), 1450);
+    }, wait);
   }
 
   if (document.readyState === "complete") {
@@ -14,6 +56,7 @@
     window.addEventListener("load", hideLoader, { once: true });
   }
 
+  // (resten av koden din under her uendret)
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
