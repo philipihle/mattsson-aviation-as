@@ -1,197 +1,377 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mattsson Aviation AS</title>
-<meta name="description" content="Mattsson Aviation AS – aerial firefighting pilot. Operational experience flying the Fire Boss across the Nordics and Europe. Profile, experience and contact.">
-<link rel="stylesheet" href="../ds-industry.css">
-<style>
-  body { margin: 0; background: var(--color-bg); }
-  a { color: var(--color-accent-700); }
-  a:hover { color: var(--color-accent-900); }
-  .contact-link:hover { color: var(--color-accent-900) !important; text-decoration: underline !important; }
-  @keyframes ma-boot { 0%,75% { opacity: 1 } 100% { opacity: 0; visibility: hidden } }
-  @keyframes ma-lift { 0% { transform: translateY(10px); opacity: 0 } 25% { transform: translateY(0); opacity: 1 } 100% { transform: translateY(-8px); opacity: 0 } }
-  @media (prefers-reduced-motion: reduce) { .ma-boot { display: none } }
 
-  @media (max-width: 720px) {
-    .header-bar { flex-wrap: wrap; height: auto !important; padding: 14px 20px !important; row-gap: 12px; }
-    .header-nav { width: 100%; justify-content: space-between; gap: 14px !important; }
-    .hero-inner { padding: 84px 20px 28px !important; }
-    .hero-metrics { grid-template-columns: 1fr !important; margin-top: 32px !important; }
-    .hero-metric { border-left: none !important; padding: 14px 0 4px !important; }
-    .section-container { padding: 56px 20px !important; }
-    .section-row { grid-template-columns: 1fr !important; gap: 20px !important; }
-    .profil-media { grid-template-columns: 1fr !important; gap: 28px !important; }
-    .exp-row { grid-template-columns: 76px 1fr !important; gap: 16px !important; }
-    .kontakt-grid { grid-template-columns: 1fr !important; }
-    .kontakt-item { border-left: none !important; border-top: 1px solid var(--color-divider) !important; padding: 20px 0 !important; }
-    .kontakt-item:first-child { border-top: none !important; padding-top: 0 !important; }
-    .footer-inner { padding: 24px 20px !important; }
-  }
-</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mattsson Aviation AS</title>
+  <meta name="description"
+    content="Mattsson Aviation AS – aerial firefighting pilot. Operational experience flying the Fire Boss across the Nordics and Europe. Profile, experience and contact.">
+  <link rel="stylesheet" href="../ds-industry.css">
+  <style>
+    body {
+      margin: 0;
+      background: var(--color-bg);
+    }
+
+    a {
+      color: var(--color-accent-700);
+    }
+
+    a:hover {
+      color: var(--color-accent-900);
+    }
+
+    .contact-link:hover {
+      color: var(--color-accent-900) !important;
+      text-decoration: underline !important;
+    }
+
+    @keyframes ma-boot {
+
+      0%,
+      75% {
+        opacity: 1
+      }
+
+      100% {
+        opacity: 0;
+        visibility: hidden
+      }
+    }
+
+    @keyframes ma-lift {
+      0% {
+        transform: translateY(10px);
+        opacity: 0
+      }
+
+      25% {
+        transform: translateY(0);
+        opacity: 1
+      }
+
+      100% {
+        transform: translateY(-8px);
+        opacity: 0
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ma-boot {
+        display: none
+      }
+    }
+
+    @media (max-width: 720px) {
+      .header-bar {
+        flex-wrap: wrap;
+        height: auto !important;
+        padding: 14px 20px !important;
+        row-gap: 12px;
+      }
+
+      .header-nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 14px !important;
+      }
+
+      .hero-inner {
+        padding: 84px 20px 28px !important;
+      }
+
+      .hero-metrics {
+        grid-template-columns: 1fr !important;
+        margin-top: 32px !important;
+      }
+
+      .hero-metric {
+        border-left: none !important;
+        padding: 14px 0 4px !important;
+      }
+
+      .section-container {
+        padding: 56px 20px !important;
+      }
+
+      .section-row {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+
+      .profil-media {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+      }
+
+      .exp-row {
+        grid-template-columns: 76px 1fr !important;
+        gap: 16px !important;
+      }
+
+      .kontakt-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .kontakt-item {
+        border-left: none !important;
+        border-top: 1px solid var(--color-divider) !important;
+        padding: 20px 0 !important;
+      }
+
+      .kontakt-item:first-child {
+        border-top: none !important;
+        padding-top: 0 !important;
+      }
+
+      .footer-inner {
+        padding: 24px 20px !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div style="background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); min-height:100vh; display:flex; flex-direction:column">
+  <div
+    style="background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); min-height:100vh; display:flex; flex-direction:column">
 
-  <div class="ma-boot" style="position:fixed; inset:0; z-index:9000; background:var(--color-bg); display:flex; align-items:center; justify-content:center; animation:ma-boot 2200ms ease forwards; pointer-events:none">
-    <div style="display:flex; flex-direction:column; align-items:center; gap:14px; animation:ma-lift 2200ms ease forwards">
-      <div style="width:46px; height:46px; border-radius:999px; border:1.5px solid var(--color-accent-700); display:flex; align-items:center; justify-content:center">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3-1 3 1v-1.5L13 19v-5.5l8 2.5z" fill="var(--color-accent-700)"></path>
-        </svg>
-      </div>
-      <div style="font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--color-neutral-600); font-weight:600">Mattsson Aviation</div>
-    </div>
-  </div>
-
-  <header style="position:sticky; top:0; z-index:100; background:color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--color-divider)">
-    <div class="header-bar" style="max-width:1200px; margin:0 auto; padding:0 32px; height:66px; display:flex; align-items:center; gap:28px">
-      <a href="./" style="display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit; margin-right:auto">
-        <img src="../mlogov2.png" alt="Mattsson Aviation" style="width:38px; height:38px; object-fit:contain">
-        <span style="font-family:var(--font-heading); font-weight:600; font-size:17px; letter-spacing:0.06em; text-transform:uppercase; line-height:1">Mattsson Aviation AS</span>
-      </a>
-      <nav class="header-nav" style="display:flex; align-items:center; gap:22px">
-        <a href="#profil" style="font-size:12px; letter-spacing:0.09em; text-transform:uppercase; text-decoration:none; color:var(--color-text)">Profile</a>
-        <a href="#erfaring" style="font-size:12px; letter-spacing:0.09em; text-transform:uppercase; text-decoration:none; color:var(--color-text)">Experience</a>
-        <a href="#kontakt" style="font-size:12px; letter-spacing:0.09em; text-transform:uppercase; text-decoration:none; color:var(--color-text)">Contact</a>
-        <span style="display:flex; align-items:center; gap:7px; padding-left:22px; border-left:1px solid var(--color-divider); font-size:12px; letter-spacing:0.09em">
-          <a href="../" style="text-decoration:none; color:var(--color-neutral-600)">NO</a>
-          <span style="color:var(--color-neutral-500)">/</span>
-          <span style="color:var(--color-accent-800); font-weight:700">EN</span>
-        </span>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top" style="flex:1 0 auto">
-
-    <section style="position:relative; min-height:64vh; max-height:720px; display:flex; align-items:flex-end; border-bottom:1px solid var(--color-divider); overflow:hidden">
-      <div class="duotone" style="position:absolute; inset:0">
-        <img src="../firebossinaction.jpg" alt="" style="width:100%; height:100%; object-fit:cover; object-position:center 40%; filter:contrast(1.04) saturate(1.05)">
-      </div>
-      <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(29,31,32,.88) 0%, rgba(29,31,32,.66) 46%, rgba(29,31,32,.34) 100%)"></div>
-      <div class="hero-inner" style="position:relative; width:100%; max-width:1200px; margin:0 auto; padding:120px 32px 40px">
-        <div style="max-width:760px">
-          <div style="display:flex; align-items:center; gap:12px; margin-bottom:22px">
-            <span style="width:36px; height:1px; background:rgba(255,255,255,.55)"></span>
-            <span style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,.78)">Aviation consultancy</span>
-          </div>
-          <h1 style="font-family:var(--font-heading); font-weight:600; font-size:clamp(46px,6.4vw,88px); line-height:0.98; letter-spacing:-0.02em; color:#fff; margin:0 0 20px; text-transform:uppercase">Mattsson<br>Aviation AS</h1>
-          <p style="font-size:17px; line-height:1.6; color:rgba(255,255,255,.82); max-width:56ch; margin:0">A Norwegian limited company in aviation, owned and run by Peter Mattsson. Through the company he is contracted as an aerial firefighting pilot in Europe.</p>
+    <div class="ma-boot"
+      style="position:fixed; inset:0; z-index:9000; background:var(--color-bg); display:flex; align-items:center; justify-content:center; animation:ma-boot 2200ms ease forwards; pointer-events:none">
+      <div
+        style="display:flex; flex-direction:column; align-items:center; gap:14px; animation:ma-lift 2200ms ease forwards">
+        <div
+          style="width:46px; height:46px; border-radius:999px; border:1.5px solid var(--color-accent-700); display:flex; align-items:center; justify-content:center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3-1 3 1v-1.5L13 19v-5.5l8 2.5z"
+              fill="var(--color-accent-700)"></path>
+          </svg>
         </div>
-        <div class="hero-metrics" style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:0; margin-top:56px; border-top:1px solid rgba(255,255,255,.3)">
-          <div class="hero-metric" style="padding:18px 24px 4px 0">
-            <div style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:6px">Current assignment</div>
-            <div style="font-family:var(--font-heading); font-size:21px; color:#fff; line-height:1.1">Aerial firefighting pilot</div>
-          </div>
-          <div class="hero-metric" style="padding:18px 24px 4px; border-left:1px solid rgba(255,255,255,.3)">
-            <div style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:6px">Aircraft type</div>
-            <div style="font-family:var(--font-heading); font-size:21px; color:#fff; line-height:1.1">Fire Boss / AT-802</div>
-          </div>
-          <div class="hero-metric" style="padding:18px 24px 4px; border-left:1px solid rgba(255,255,255,.3)">
-            <div style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:6px">Area of operations</div>
-            <div style="font-family:var(--font-heading); font-size:21px; color:#fff; line-height:1.1">Nordics / Europe</div>
-          </div>
-        </div>
+        <div
+          style="font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--color-neutral-600); font-weight:600">
+          Mattsson Aviation</div>
       </div>
-    </section>
+    </div>
 
-    <section id="profil" style="border-bottom:1px solid var(--color-divider)">
-      <div class="section-container" style="max-width:1200px; margin:0 auto; padding:88px 32px">
-        <div class="section-row" style="display:grid; grid-template-columns:.28fr .72fr; gap:48px; align-items:start">
-          <h2 style="font-family:var(--font-heading); font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-600); margin:6px 0 0">01 — Profile</h2>
-          <div class="profil-media" style="display:grid; grid-template-columns:1fr .8fr; gap:48px; align-items:start">
-            <div>
-              <h3 style="font-family:var(--font-heading); font-size:clamp(28px,3vw,40px); line-height:1.06; letter-spacing:-0.015em; margin:0 0 22px">Peter Mattsson</h3>
-              <p style="font-size:16px; line-height:1.7; margin:0 0 16px; max-width:52ch">Mattsson Aviation AS is a Norwegian limited company providing aviation consultancy. It is owned and run by Peter Mattsson, who through the company is contracted as an aerial firefighting pilot in Europe.</p>
-              <p style="font-size:16px; line-height:1.7; margin:0; max-width:52ch; color:color-mix(in srgb, var(--color-text) 72%, transparent)">The work covers operational flying, field tactics and coordination with ground crews and other aircraft during active operations.</p>
-              <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:26px">
-                <span class="tag tag-outline">Swedish</span>
-                <span class="tag tag-outline">Norwegian</span>
-                <span class="tag tag-outline">English</span>
+    <header
+      style="position:sticky; top:0; z-index:100; background:color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--color-divider)">
+      <div class="header-bar"
+        style="max-width:1200px; margin:0 auto; padding:0 32px; height:66px; display:flex; align-items:center; gap:28px">
+        <a href="./"
+          style="display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit; margin-right:auto">
+          <img src="../mlogov2.png" alt="Mattsson Aviation" style="width:38px; height:38px; object-fit:contain">
+          <span
+            style="font-family:var(--font-heading); font-weight:600; font-size:17px; letter-spacing:0.06em; text-transform:uppercase; line-height:1">Mattsson
+            Aviation AS</span>
+        </a>
+        <nav class="header-nav" style="display:flex; align-items:center; gap:22px">
+          <a href="#profil"
+            style="font-size:12px; letter-spacing:0.09em; text-transform:uppercase; text-decoration:none; color:var(--color-text)">Profile</a>
+          <a href="#erfaring"
+            style="font-size:12px; letter-spacing:0.09em; text-transform:uppercase; text-decoration:none; color:var(--color-text)">Experience</a>
+          <a href="#kontakt"
+            style="font-size:12px; letter-spacing:0.09em; text-transform:uppercase; text-decoration:none; color:var(--color-text)">Contact</a>
+          <span
+            style="display:flex; align-items:center; gap:7px; padding-left:22px; border-left:1px solid var(--color-divider); font-size:12px; letter-spacing:0.09em">
+            <a href="../" style="text-decoration:none; color:var(--color-neutral-600)">NO</a>
+            <span style="color:var(--color-neutral-500)">/</span>
+            <span style="color:var(--color-accent-800); font-weight:700">EN</span>
+          </span>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" style="flex:1 0 auto">
+
+      <section
+        style="position:relative; min-height:64vh; max-height:720px; display:flex; align-items:flex-end; border-bottom:1px solid var(--color-divider); overflow:hidden">
+        <div class="duotone" style="position:absolute; inset:0">
+          <img src="../firebossinaction.jpg" alt=""
+            style="width:100%; height:100%; object-fit:cover; object-position:center 40%; filter:contrast(1.04) saturate(1.05)">
+        </div>
+        <div
+          style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(29,31,32,.88) 0%, rgba(29,31,32,.66) 46%, rgba(29,31,32,.34) 100%)">
+        </div>
+        <div class="hero-inner"
+          style="position:relative; width:100%; max-width:1200px; margin:0 auto; padding:120px 32px 40px">
+          <div style="max-width:760px">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:22px">
+              <span style="width:36px; height:1px; background:rgba(255,255,255,.55)"></span>
+              <span
+                style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,.78)">Aviation
+                consultancy</span>
+            </div>
+            <h1
+              style="font-family:var(--font-heading); font-weight:600; font-size:clamp(46px,6.4vw,88px); line-height:0.98; letter-spacing:-0.02em; color:#fff; margin:0 0 20px; text-transform:uppercase">
+              Mattsson<br>Aviation AS</h1>
+            <p style="font-size:17px; line-height:1.6; color:rgba(255,255,255,.82); max-width:56ch; margin:0">A
+              Norwegian limited company in aviation, owned and run by Peter Mattsson. Through the company he is
+              contracted as an aerial firefighting pilot in Europe.</p>
+          </div>
+          <div class="hero-metrics"
+            style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:0; margin-top:56px; border-top:1px solid rgba(255,255,255,.3)">
+            <div class="hero-metric" style="padding:18px 24px 4px 0">
+              <div
+                style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:6px">
+                Current assignment</div>
+              <div style="font-family:var(--font-heading); font-size:21px; color:#fff; line-height:1.1">Aerial
+                firefighting pilot</div>
+            </div>
+            <div class="hero-metric" style="padding:18px 24px 4px; border-left:1px solid rgba(255,255,255,.3)">
+              <div
+                style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:6px">
+                Aircraft type</div>
+              <div style="font-family:var(--font-heading); font-size:21px; color:#fff; line-height:1.1">Fire Boss /
+                AT-802</div>
+            </div>
+            <div class="hero-metric" style="padding:18px 24px 4px; border-left:1px solid rgba(255,255,255,.3)">
+              <div
+                style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:6px">
+                Area of operations</div>
+              <div style="font-family:var(--font-heading); font-size:21px; color:#fff; line-height:1.1">Nordics / Europe
               </div>
             </div>
-            <figure class="blueprint" style="aspect-ratio:4/5">
-              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-              <img src="../peter_fb.jpg" alt="Peter Mattsson with the Fire Boss" style="width:100%; height:100%; object-fit:cover">
-            </figure>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section style="border-bottom:1px solid var(--color-divider)">
-      <div class="section-container" style="max-width:1200px; margin:0 auto; padding:88px 32px">
-        <div class="section-row" style="display:grid; grid-template-columns:.28fr .72fr; gap:48px; align-items:start">
-          <h2 style="font-family:var(--font-heading); font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-600); margin:6px 0 0">02 — Company</h2>
-          <table class="table">
-            <tbody>
-              <tr>
-                <td style="width:34%; color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">Company</td>
-                <td style="font-family:var(--font-heading); font-size:18px">Mattsson Aviation AS</td>
-              </tr>
-              <tr>
-                <td style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">Legal form</td>
-                <td style="font-family:var(--font-heading); font-size:18px">Norwegian limited company (AS)</td>
-              </tr>
-              <tr>
-                <td style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">Business</td>
-                <td style="font-family:var(--font-heading); font-size:18px">Aviation consultancy</td>
-              </tr>
-              <tr>
-                <td style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">Owner and managing director</td>
-                <td style="font-family:var(--font-heading); font-size:18px">Peter Mattsson</td>
-              </tr>
-              <tr>
-                <td style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">Base</td>
-                <td style="font-family:var(--font-heading); font-size:18px">Norway / Sweden</td>
-              </tr>
-              <tr>
-                <td style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">Company registration number</td>
-                <td style="font-size:14px; color:var(--color-neutral-600)">937 039 190</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section id="erfaring" style="border-bottom:1px solid var(--color-divider)">
-      <div class="section-container" style="max-width:1200px; margin:0 auto; padding:88px 32px">
-        <div class="section-row" style="display:grid; grid-template-columns:.28fr .72fr; gap:48px; align-items:start">
-          <div>
-            <h2 style="font-family:var(--font-heading); font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-600); margin:6px 0 10px">03 — Experience</h2>
-            <p style="font-size:13px; line-height:1.6; color:var(--color-neutral-600); margin:0; max-width:28ch">Roles and responsibilities over time.</p>
-          </div>
-          <div>
-            <article class="exp-row" style="display:grid; grid-template-columns:120px 1fr; gap:32px; padding:26px 0; border-top:1px solid var(--color-text)">
+      <section id="profil" style="border-bottom:1px solid var(--color-divider)">
+        <div class="section-container" style="max-width:1200px; margin:0 auto; padding:88px 32px">
+          <div class="section-row" style="display:grid; grid-template-columns:.28fr .72fr; gap:48px; align-items:start">
+            <h2
+              style="font-family:var(--font-heading); font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-600); margin:6px 0 0">
+              01 — Profile</h2>
+            <div class="profil-media" style="display:grid; grid-template-columns:1fr .8fr; gap:48px; align-items:start">
               <div>
-                <div style="font-family:var(--font-heading); font-size:20px; line-height:1">Now</div>
-                <div style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-accent-800); margin-top:6px">Operational</div>
-              </div>
-              <div>
-                <h3 style="font-family:var(--font-heading); font-size:26px; line-height:1.1; margin:0 0 8px">Aerial firefighting pilot, Europe</h3>
-                <p style="font-size:15px; line-height:1.65; margin:0 0 12px; max-width:60ch; color:color-mix(in srgb, var(--color-text) 78%, transparent)">Operational flying on the Fire Boss / AT-802 in wildfire response, based in Sweden with assignments across the Nordics and Europe.</p>
-                <div style="display:flex; flex-wrap:wrap; gap:8px">
-                  <span class="tag tag-accent">Fire Boss / AT-802</span>
-                  <span class="tag tag-accent">Wildfire response</span>
+                <h3
+                  style="font-family:var(--font-heading); font-size:clamp(28px,3vw,40px); line-height:1.06; letter-spacing:-0.015em; margin:0 0 22px">
+                  Peter Mattsson</h3>
+                <p style="font-size:16px; line-height:1.7; margin:0 0 16px; max-width:52ch">Mattsson Aviation AS is a
+                  Norwegian limited company providing aviation consultancy. It is owned and run by Peter Mattsson, who
+                  through the company is contracted as an aerial firefighting pilot in Europe.</p>
+                <p
+                  style="font-size:16px; line-height:1.7; margin:0; max-width:52ch; color:color-mix(in srgb, var(--color-text) 72%, transparent)">
+                  The work covers operational flying, field tactics and coordination with ground crews and other
+                  aircraft during active operations.</p>
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:26px">
+                  <span class="tag tag-outline">Swedish</span>
+                  <span class="tag tag-outline">Norwegian</span>
+                  <span class="tag tag-outline">English</span>
                 </div>
               </div>
-            </article>
-            <article class="exp-row" style="display:grid; grid-template-columns:120px 1fr; gap:32px; padding:26px 0; border-top:1px solid var(--color-divider)">
-              <div>
-                <div style="font-family:var(--font-heading); font-size:20px; line-height:1; color:var(--color-neutral-600)">[ year ]</div>
-                <div style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-neutral-500); margin-top:6px">Previous</div>
-              </div>
-              <div>
-                <h3 style="font-family:var(--font-heading); font-size:26px; line-height:1.1; margin:0 0 8px">Commercial flying</h3>
-                <p style="font-size:15px; line-height:1.65; margin:0; max-width:60ch; color:var(--color-neutral-600)">Role, employer, aircraft types and period to be added.</p>
-              </div>
-            </article>
-            <article class="exp-row" style="display:grid; grid-template-columns:120px 1fr; gap:32px; padding:26px 0; border-top:1px solid var(--color-divider); border-bottom:1px solid var(--color-divider)">
+              <figure class="blueprint" style="aspect-ratio:4/5">
+                <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                <img src="../peter_fb.jpg" alt="Peter Mattsson with the Fire Boss"
+                  style="width:100%; height:100%; object-fit:cover">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="border-bottom:1px solid var(--color-divider)">
+        <div class="section-container" style="max-width:1200px; margin:0 auto; padding:88px 32px">
+          <div class="section-row" style="display:grid; grid-template-columns:.28fr .72fr; gap:48px; align-items:start">
+            <h2
+              style="font-family:var(--font-heading); font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-600); margin:6px 0 0">
+              02 — Company</h2>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td
+                    style="width:34%; color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">
+                    Company</td>
+                  <td style="font-family:var(--font-heading); font-size:18px">Mattsson Aviation AS</td>
+                </tr>
+                <tr>
+                  <td
+                    style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">
+                    Legal form</td>
+                  <td style="font-family:var(--font-heading); font-size:18px">Norwegian limited company (AS)</td>
+                </tr>
+                <tr>
+                  <td
+                    style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">
+                    Business</td>
+                  <td style="font-family:var(--font-heading); font-size:18px">Aviation consultancy</td>
+                </tr>
+                <tr>
+                  <td
+                    style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">
+                    Owner and managing director</td>
+                  <td style="font-family:var(--font-heading); font-size:18px">Peter Mattsson</td>
+                </tr>
+                <tr>
+                  <td
+                    style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">
+                    Base</td>
+                  <td style="font-family:var(--font-heading); font-size:18px">Norway / Sweden</td>
+                </tr>
+                <tr>
+                  <td
+                    style="color:var(--color-neutral-700); font-size:13px; letter-spacing:0.04em; text-transform:uppercase">
+                    Company registration number</td>
+                  <td style="font-family:var(--font-heading); font-size:18px">937 039 190</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="erfaring" style="border-bottom:1px solid var(--color-divider)">
+        <div class="section-container" style="max-width:1200px; margin:0 auto; padding:88px 32px">
+          <div class="section-row" style="display:grid; grid-template-columns:.28fr .72fr; gap:48px; align-items:start">
+            <div>
+              <h2
+                style="font-family:var(--font-heading); font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-600); margin:6px 0 10px">
+                03 — Experience</h2>
+              <p style="font-size:13px; line-height:1.6; color:var(--color-neutral-600); margin:0; max-width:28ch">Roles
+                and responsibilities over time.</p>
+            </div>
+            <div>
+              <article class="exp-row"
+                style="display:grid; grid-template-columns:120px 1fr; gap:32px; padding:26px 0; border-top:1px solid var(--color-text)">
+                <div>
+                  <div style="font-family:var(--font-heading); font-size:20px; line-height:1">Now</div>
+                  <div
+                    style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-accent-800); margin-top:6px">
+                    Operational</div>
+                </div>
+                <div>
+                  <h3 style="font-family:var(--font-heading); font-size:26px; line-height:1.1; margin:0 0 8px">Aerial
+                    firefighting pilot, Europe</h3>
+                  <p
+                    style="font-size:15px; line-height:1.65; margin:0 0 12px; max-width:60ch; color:color-mix(in srgb, var(--color-text) 78%, transparent)">
+                    Operational flying on the Fire Boss / AT-802 in wildfire response, based in Sweden with assignments
+                    across the Nordics and Europe.</p>
+                  <div style="display:flex; flex-wrap:wrap; gap:8px">
+                    <span class="tag tag-accent">Fire Boss / AT-802</span>
+                    <span class="tag tag-accent">Wildfire response</span>
+                  </div>
+                </div>
+              </article>
+              <article class="exp-row"
+                style="display:grid; grid-template-columns:120px 1fr; gap:32px; padding:26px 0; border-top:1px solid var(--color-divider)">
+                <div>
+                  <div
+                    style="font-family:var(--font-heading); font-size:20px; line-height:1; color:var(--color-neutral-600)">
+                    8 years</div>
+                  <div
+                    style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-neutral-500); margin-top:6px">
+                    Previous</div>
+                </div>
+                <div>
+                  <h3 style="font-family:var(--font-heading); font-size:26px; line-height:1.1; margin:0 0 8px">
+                    Commercial flying</h3>
+                  <p style="font-size:15px; line-height:1.65; margin:0; max-width:60ch; color:var(--color-neutral-600)">
+                    Pilot for SAS based in Norway.</p>
+                  <span class="tag tag-accent">SAS</span>
+                  <span class="tag tag-accent">Airbus</span>
+                </div>
+              </article>
+              <!--<article class="exp-row" style="display:grid; grid-template-columns:120px 1fr; gap:32px; padding:26px 0; border-top:1px solid var(--color-divider); border-bottom:1px solid var(--color-divider)">
               <div>
                 <div style="font-family:var(--font-heading); font-size:20px; line-height:1; color:var(--color-neutral-600)">[ year ]</div>
                 <div style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-neutral-500); margin-top:6px">Training</div>
@@ -200,56 +380,74 @@
                 <h3 style="font-family:var(--font-heading); font-size:26px; line-height:1.1; margin:0 0 8px">Licences and type ratings</h3>
                 <p style="font-size:15px; line-height:1.65; margin:0; max-width:60ch; color:var(--color-neutral-600)">Licence level, medical class, type ratings and flight hours to be added.</p>
               </div>
-            </article>
+            </article> -->
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="kontakt">
-      <div class="section-container" style="max-width:1200px; margin:0 auto; padding:88px 32px">
-        <div class="section-row" style="display:grid; grid-template-columns:.28fr .72fr; gap:48px; align-items:start">
-          <h2 style="font-family:var(--font-heading); font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-600); margin:6px 0 0">04 — Contact</h2>
-          <div>
-            <p style="font-size:18px; line-height:1.6; margin:0 0 40px; max-width:52ch">Enquiries regarding assignments, cooperation or professional dialogue go directly to Peter Mattsson.</p>
-            <div class="kontakt-grid" style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:0; border-top:1px solid var(--color-text)">
-              <div class="kontakt-item" style="padding:24px 24px 24px 0">
-                <div style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-neutral-600); margin-bottom:10px">Email</div>
-                <a href="mailto:boeing737peter@gmail.com" class="contact-link" style="font-family:var(--font-heading); font-size:19px; line-height:1.2; color:var(--color-accent-800); text-decoration:none; overflow-wrap:anywhere">boeing737peter@gmail.com</a>
-                <div style="font-size:12px; color:var(--color-neutral-600); margin-top:8px">Preferred channel</div>
-              </div>
-              <div class="kontakt-item" style="padding:24px; border-left:1px solid var(--color-divider)">
-                <div style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-neutral-600); margin-bottom:10px">Phone</div>
-                <a href="tel:+4747345555" class="contact-link" style="font-family:var(--font-heading); font-size:19px; line-height:1.2; color:var(--color-accent-800); text-decoration:none">+47 47 34 55 55</a>
-                <div style="font-size:12px; color:var(--color-neutral-600); margin-top:8px">Call or text</div>
-              </div>
-              <div class="kontakt-item" style="padding:24px; border-left:1px solid var(--color-divider)">
-                <div style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-neutral-600); margin-bottom:10px">Base</div>
-                <div style="font-family:var(--font-heading); font-size:19px; line-height:1.2">Norway / Sweden</div>
-                <div style="font-size:12px; color:var(--color-neutral-600); margin-top:8px">Operations based in Sweden</div>
+      <section id="kontakt">
+        <div class="section-container" style="max-width:1200px; margin:0 auto; padding:88px 32px">
+          <div class="section-row" style="display:grid; grid-template-columns:.28fr .72fr; gap:48px; align-items:start">
+            <h2
+              style="font-family:var(--font-heading); font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-600); margin:6px 0 0">
+              04 — Contact</h2>
+            <div>
+              <p style="font-size:18px; line-height:1.6; margin:0 0 40px; max-width:52ch">Enquiries regarding
+                assignments, cooperation or professional dialogue go directly to Peter Mattsson.</p>
+              <div class="kontakt-grid"
+                style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:0; border-top:1px solid var(--color-text)">
+                <div class="kontakt-item" style="padding:24px 24px 24px 0">
+                  <div
+                    style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-neutral-600); margin-bottom:10px">
+                    Email</div>
+                  <a href="mailto:boeing737peter@gmail.com" class="contact-link"
+                    style="font-family:var(--font-heading); font-size:19px; line-height:1.2; color:var(--color-accent-800); text-decoration:none; overflow-wrap:anywhere">boeing737peter@gmail.com</a>
+                  <div style="font-size:12px; color:var(--color-neutral-600); margin-top:8px">Preferred channel</div>
+                </div>
+                <div class="kontakt-item" style="padding:24px; border-left:1px solid var(--color-divider)">
+                  <div
+                    style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-neutral-600); margin-bottom:10px">
+                    Phone</div>
+                  <a href="tel:+4747345555" class="contact-link"
+                    style="font-family:var(--font-heading); font-size:19px; line-height:1.2; color:var(--color-accent-800); text-decoration:none">+47
+                    47 34 55 55</a>
+                  <div style="font-size:12px; color:var(--color-neutral-600); margin-top:8px">Call or text</div>
+                </div>
+                <div class="kontakt-item" style="padding:24px; border-left:1px solid var(--color-divider)">
+                  <div
+                    style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-neutral-600); margin-bottom:10px">
+                    Base</div>
+                  <div style="font-family:var(--font-heading); font-size:19px; line-height:1.2">Norway / Sweden</div>
+                  <div style="font-size:12px; color:var(--color-neutral-600); margin-top:8px">Operations based in Sweden
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer style="border-top:1px solid var(--color-divider); margin-top:auto">
-    <div class="footer-inner" style="max-width:1200px; margin:0 auto; padding:32px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap">
-      <div style="display:flex; align-items:center; gap:14px">
-        <img src="../mlogov2.png" alt="" style="width:34px; height:34px; object-fit:contain">
-        <div>
-          <div style="font-family:var(--font-heading); font-size:15px; letter-spacing:0.06em; text-transform:uppercase; line-height:1.2">Mattsson Aviation AS</div>
-          <div style="font-size:12px; color:var(--color-neutral-600)">Aviation consultancy</div>
+    <footer style="border-top:1px solid var(--color-divider); margin-top:auto">
+      <div class="footer-inner"
+        style="max-width:1200px; margin:0 auto; padding:32px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap">
+        <div style="display:flex; align-items:center; gap:14px">
+          <img src="../mlogov2.png" alt="" style="width:34px; height:34px; object-fit:contain">
+          <div>
+            <div
+              style="font-family:var(--font-heading); font-size:15px; letter-spacing:0.06em; text-transform:uppercase; line-height:1.2">
+              Mattsson Aviation AS</div>
+            <div style="font-size:12px; color:var(--color-neutral-600)">Aviation consultancy</div>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:16px; font-size:12px; color:var(--color-neutral-600)">
+          <a href="./" style="color:var(--color-neutral-700); text-decoration:none">Back to top</a>
+          <span>© 2026 Mattsson Aviation AS</span>
         </div>
       </div>
-      <div style="display:flex; align-items:center; gap:16px; font-size:12px; color:var(--color-neutral-600)">
-        <a href="./" style="color:var(--color-neutral-700); text-decoration:none">Back to top</a>
-        <span>© 2026 Mattsson Aviation AS</span>
-      </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 </body>
+
 </html>
